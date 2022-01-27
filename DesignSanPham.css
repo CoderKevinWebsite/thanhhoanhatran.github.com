@@ -1,0 +1,388 @@
+@media only screen and (max-width: 2000px) {
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 200vh;
+    background: linear-gradient(#4daf54, #3d8880) ;
+    font-family: "Popins";
+}
+
+.headline {
+    position: fixed;
+    background: #272d40;
+    border: none;
+    outline: none;
+    padding: 0px;
+    margin: 0px;
+    height: 150px;
+    width: 1918px;
+    z-index: 1;
+}
+
+.slider-product-one-content {
+    background-color: rgb(242, 255, 128);
+    padding: 12px;
+}
+.slider-product-one-title {
+    position: relative;
+    left: 40px;
+}
+
+.slider-product-one-title h2 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.slider-product-one-content-items {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.slider-product-one-content-item:hover > img {
+    transform: translateY(-25px);
+}
+
+.slider-product-one-content-item {
+    width: 15%;
+    background-color: #272d40;
+    padding: 40px 12px 50px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.slider-product-one-content-item > img {
+    width: 100%;
+    height: 80%;
+    transition: all 0.5s ease;
+}
+
+.slider-product-one-content-text {
+    padding: 0px;
+}
+
+.slider-product-one-content-text li:first-child {
+    font-weight: bold;
+    font-size: 25px;
+    color: #69ca6f;
+    text-align: center;
+}
+
+.slider-product-one-content-text li:nth-child(2) {
+    font-weight: bold;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.slider-product-one-content-text li {
+    list-style: none;
+    margin-bottom: 6px;
+}
+/* .card {
+     position: relative; 
+     top: 500px;
+    left: 100px; 
+    width: 300px;
+    height: 375px;
+    background: #272d40;
+    border-radius: 20px;
+}
+
+.card_image {
+    position: relative;
+    left: 80px;
+    margin-bottom: 20px;
+}
+
+.card_image img {
+    left: 100px;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.card_title, .card_price {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;;
+}
+
+.card_title {
+    color: #74e07b;
+}
+
+.card_price {
+    position: relative;
+    color: #eff0ef;
+    top: -10px;
+}
+
+.card_saving button {
+    position: relative;
+    top: -35px;
+    left: 60px;
+    background: #4cac53;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: #eff0ef;
+    font-weight: bold;
+    font-size: 20px;
+} */
+
+.logo img {
+    position: fixed;
+    left: 25px;
+    top: 25px;
+    width: 5%;
+    height: 10%;
+    object-fit: cover;
+    z-index: 100;
+    background-size: cover;
+}
+
+
+.up ul {
+    list-style: none;
+    margin-left: /*600px*/20%;
+}
+
+.up ul li {
+    margin-left: 50px;
+    float: left;
+}
+
+.up ul li a {
+    position: fixed;
+    z-index: 101;
+    top: 40px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(219, 219, 214);
+}
+
+.up ul li a:hover {
+    color: #ff7b00;
+    z-index: 100;
+}
+
+.up ul li img{
+    position: fixed;
+    top: 30px;
+    width: 3%;
+    height: 5%;
+    object-fit: cover;
+    display: inline-block;
+    z-index: 100;
+}
+
+.search-box {
+    position: fixed;
+    top: 6%;
+    left: 80%;
+    z-index: 100;
+    transform: translate(-50%,-50%);
+    background: rgb(255, 255, 255);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10 px;
+}
+
+.search-box:hover > .search-txt {
+    width: 270px;
+    padding: 0.6px;
+}
+
+.search-box:hover > .search-btn {
+    background: rgb(174, 255, 208);
+}
+
+.search-btn {
+    color: black;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    height: 37px;
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.4s;
+    line-height: -50px;
+    width: 0px;
+}
+
+}
+
+@media only screen and (max-width: 1500px) {
+    body {
+        background: red;
+    }
+    .logo img {
+        height: 12%;
+    }
+
+    .headline {
+        height: 100px;
+    }
+
+    .first_li a {
+        position: fixed;
+        left: 30%;
+    }
+
+    .first_li img {
+        position: fixed;
+        left:27%;
+    }
+
+    .second_li a {
+        position: fixed;
+        left: 45%;
+        z-index: 100;
+    }
+
+    .second_li img {
+        left: 42%;
+    }
+
+    .third_li a {
+        position: fixed;
+        left: 60%;
+    }
+
+    .third_li img {
+        position: fixed;
+        left: 56%;
+    }
+
+    .up ul li a {
+        font-size: 20px;
+    }
+
+    .search-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .search-box {
+        position: fixed;
+        top: 8.5%;
+        left: 80%;
+        height: 30px;
+    }
+
+    .search-box:hover > .search-txt {
+        width: 150px;
+    }
+
+    .slider-product-one-content-text li:first-child {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .slider-product-one-content-text li:nth-child(2) {
+        font-size: 15px;
+    }
+
+}
+
+
+@media only screen and (max-width: 620px) {
+    body {
+        background: gainsboro;
+    }
+
+    .logo img {
+        height: 18.5%;
+        width: 9%;
+    }
+
+    .first_li a {
+        position: fixed;
+        left: 20%;
+    }
+
+    .first_li img {
+        position: fixed;
+        left: 17%;
+        top: 30%;
+        z-index: 100;
+    }
+
+    .second_li a {
+        position: fixed;
+        left: 38%;
+        z-index: 100;
+    }
+
+    .second_li img {
+        left: 35%;
+    }
+
+    .third_li a {
+        position: fixed;
+        left: 56%;
+    }
+
+    .third_li img {
+        position: fixed;
+        left: 53%;
+    }
+
+    .search-box {
+        top: 20%;
+        left: 81.1%;
+    }
+
+    .search-box:hover > .search-txt {
+        width: 85px;
+    }
+
+    .search-btn {
+        width: 20px;
+        height: 20px;
+    }
+
+    .search-txt {
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        height: 20px;
+        padding: 0px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 10px;
+        transition: 0.4s;
+        line-height: -30px;
+        width: 0px;
+    }
+
+    .search-box {
+        height: 20px;
+    }
+    
+} 
