@@ -2,113 +2,127 @@
 <html>
     <head>
         <title>Product Card</title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="./DesignSanPham.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./DesignSanPham.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#icon').click(function() {
+                    $('ul').toggleClass('show');
+                });
+            })
+        </script>
     </head>
 
     <body>
-        <div class= "headline"></div>
-        <div class="logo"><img src="./Picture/logo_web.png" alt=""></div>
-        <div class="up">
+        <!--up-->
+        <nav>
+            <img class="logo" src="./Picture/logo_web.png" alt="">
             <ul>
-                <li class="first_li">
-                    <img src="./Picture/house.png" alt="">
-                    &emsp; &emsp; &emsp;
-                    <a href="./TrangChu/TrangChu.html">
-                        Trang chủ
-                    </a>
-                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 
-                </li>
-
-                <li class="second_li">
-                    <img src="./Picture/packaging.png" alt="">
-                    &emsp; &emsp; &emsp;
-                    <a href="">
-                        Sản phẩm
-                    </a>
-
-                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  &emsp; &emsp; &emsp; 
-                </li>
-
-                <li class="third_li">
-                    <img src="./Picture/loudspeaker.png" alt="">
-                    &emsp; &emsp; &emsp; &nbsp;
-                    <a href="">
-                        Thông báo
-                    </a>
-                </li>
+                <li><a class="active" href="#">Trang Chủ</a></li>
+                <li><a href="#">Sản Phẩm</a></li>
+                <li><a href="#">Thông Báo</a></li>
             </ul>
-            <div class="search-box">
-                <input type="text" class="search-txt" namr = "" placeholder="Search...">
-                <a href="#" class="search-btn">
-                    <i class="fas fa-search"></i>
-                </a>
+            <label id="icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+        <!--Whole for  all products -->
+        <div class="container mb-5 mt-5">
+            <div class="row">
+                <!--Card 1-->
+                <div class="col-md-4">
+                    <div class="card mt-3">
+                        <div class="product-1 align-items-center p-2 text-center">
+                            <img src="./Picture/maykhoanpin.jpg" alt="" class="rounded" width="160">
+                            <h5 id="tensanpham">Máy Khoan bin 36v</h5>
+                            <div class="mt-3 info">
+                                <span class="text1 d-block">Máy khoan bin giá rẻ, bán sỉ vui</span>
+                                <span class="text1">lòng liên hệ: 0912.630.624</span>
+                            </div>
+                            <div class="cost mt-3 text-dark">
+                                <span>1,000,000</span>
+                                <div class="star mt-3 align-items-center">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 shoe text-center text-white mt-3 cursor">
+                            <span class="text-uppercase">Lưu sản phẩm</span>
+                        </div>
+                    </div>
+                </div>
+                <!--End card 1 -->
+
+
+
+                <!--Card 2-->
+                <div class="col-md-4">
+                    <div class="card mt-3">
+                        <div class="product-1 align-items-center p-2 text-center">
+                            <img src="./Picture/maykhoanpin.jpg" alt="" class="rounded" width="160">
+                            <h5 id="tensanpham">Máy Khoan bin 36v</h5>
+                            <!--Card info-->
+                            <div class="mt-3 info">
+                                <span class="text1 d-block">Máy khoan bin giá rẻ, bán sỉ vui</span>
+                                <span class="text1">lòng liên hệ: 0912.630.624</span>
+                            </div>
+                            <div class="cost mt-3 text-dark">
+                                <span>1,000,000</span>
+                                <div class="star mt-3 align-items-center">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 shoe text-center text-white mt-3 cursor">
+                            <span class="text-uppercase">Lưu sản phẩm</span>
+                        </div>
+                    </div>
+                </div>
+                <!--End Card 2-->
+
+
+
+                <!--Card 3-->
+                <div class="col-md-4">
+                    <div class="card mt-3">
+                        <div class="product-1 align-items-center p-2 text-center">
+                            <img src="./Picture/maykhoanpin.jpg" alt="" class="rounded" width="160">
+                            <h5 id="tensanpham">Máy Khoan bin 36v</h5>
+                            <div class="mt-3 info">
+                                <span class="text1 d-block">Máy khoan bin giá rẻ, bán sỉ vui</span>
+                                <span class="text1">lòng liên hệ: 0912.630.624</span>
+                            </div>
+                            <div class="cost mt-3 text-dark">
+                                <span>1,000,000</span>
+                                <div class="star mt-3 align-items-center">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 shoe text-center text-white mt-3 cursor">
+                            <span class="text-uppercase">Lưu sản phẩm</span>
+                        </div>
+                    </div>
+                </div>
+                <!--End Card 3-->
             </div>
         </div>
-    <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
-
-    <section class="slider-product-one">
-        <div class="container">
-            <div class="slider-product-one-content">
-                <div class="slider-product-one-title">
-                    <h2>Sản phẩm nổi bật</h2>
-                </div>
-                <div class="slider-product-one-content-items">
-                    <div class="slider-product-one-content-item">
-                        <img src="./Picture/maykhoanpin.jpg" alt="">
-                        <div class="slider-product-one-content-text">
-                            <li class="Name">Máy khoan bin 36v</li>
-                            <li class="Prise">1,250,000</li>
-                        </div>
-                    </div>
-
-
-                    <div class="slider-product-one-content-item">
-                        <img src="./Picture/maykhoanpin.jpg" alt="">
-                        <div class="slider-product-one-content-text">
-                            <li class="Name">Máy khoan bin 36v</li>
-                            <li class="Prise">1,250,000</li>
-                        </div>
-                    </div>
-
-                    <div class="slider-product-one-content-item">
-                        <img src="./Picture/maykhoanpin.jpg" alt="">
-                        <div class="slider-product-one-content-text">
-                            <li class="Name">Máy khoan bin 36v</li>
-                            <li class="Prise">1,250,000</li>
-                        </div>
-                    </div>
-
-                    <div class="slider-product-one-content-item">
-                        <img src="./Picture/maykhoanpin.jpg" alt="">
-                        <div class="slider-product-one-content-text">
-                            <li class="Name">Máy khoan bin 36v</li>
-                            <li class="Prise">1,250,000</li>
-                        </div>
-                    </div>
-
-                    <div class="slider-product-one-content-item">
-                        <img src="./Picture/maykhoanpin.jpg" alt="">
-                        <div class="slider-product-one-content-text">
-                            <li class="Name">Máy khoan bin 36v</li>
-                            <li class="Prise">1,250,000</li>
-                        </div>
-                    </div>
-
-                    <div class="slider-product-one-content-item">
-                        <img src="./Picture/maykhoanpin.jpg" alt="">
-                        <div class="slider-product-one-content-text">
-                            <li class="Name">Máy khoan bin 36v</li>
-                            <li class="Prise">1,250,000</li>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </section>
-
     </body> 
 </html>
